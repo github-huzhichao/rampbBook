@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8、.Net程序跑在Linux上 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section9.html" />
+    
+    
+    <link rel="prev" href="section7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    公羊天纵
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">.Net</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    1、浅谈浅拷贝与深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    2、C#索引器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    3、抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    4、C#磁盘遍历——递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    5、ADO.NET中的五个主要对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    6、委托与事件的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="section7.html">
+            
+                <a href="section7.html">
+            
+                    
+                    7、Log4Net详细配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="section8.html">
+            
+                <a href="section8.html">
+            
+                    
+                    8、.Net程序跑在Linux上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="section9.html">
+            
+                <a href="section9.html">
+            
+                    
+                    9、ASP.Net Core 运行在Linux(Ubuntu)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="section10.html">
+            
+                <a href="section10.html">
+            
+                    
+                    10、ASP.Net Core 运行在Linux(CentOS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="section11.html">
+            
+                <a href="section11.html">
+            
+                    
+                    11、设置Azure WebSite黑白名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ADO.Net</li>
+        
+        
+    
+
+    
+        
+        <li class="header">ASP.Net</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Docker</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Hyper-V</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Linux</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >8、.Net程序跑在Linux上</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="net&#x7A0B;&#x5E8F;&#x8DD1;&#x5728;linux&#x4E0A;">.Net&#x7A0B;&#x5E8F;&#x8DD1;&#x5728;Linux&#x4E0A;</h1>
+<p>.Net&#x8D8A;&#x6765;&#x8D8A;&#x62E5;&#x62B1;&#x5F00;&#x6E90;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x8BD5;&#x4E86;&#x5982;&#x4F55;&#x8BA9;.Net&#x7A0B;&#x5E8F;&#x8DD1;&#x5728;Linux&#x4E0A;&#xFF0C;&#x679C;&#x7136;&#x518D;&#x65E0;&#x4EBA;&#x53EF;&#x4EE5;&#x963B;&#x6321;.Net&#x7684;&#x811A;&#x6B65;&#x4E86;&#x3002;</p>
+<p>Linux Disibutaion:Open Logic 7.2</p>
+<p>1&#x3001;Install .NET Core SDK</p>
+<p>SSH&#x8FDB;&#x5165;Linux,&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>
+sudo yum install libunwind libicu
+curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?LinkID=827529
+sudo mkdir -p /opt/dotnet &amp;&amp; sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+</code></pre><p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5C31;&#x5B89;&#x88C5;&#x597D;&#x4E86;.Net&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x73AF;&#x5883;&#x3002;</p>
+<p>2&#x3001;&#x6253;&#x5F00;VS&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x53F0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</p>
+<p><img src="https://images2015.cnblogs.com/blog/446435/201611/446435-20161103154924658-1368385571.png" alt="&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x53F0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;"></p>
+<p>3&#x3001;&#x5C06;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;Linux&#x4E0A;</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x662F;pscp command line&#x5DE5;&#x5177;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5230;linux</p>
+<p><img src="https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155152455-258563223.png" alt="&#x5C06;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;Linux&#x4E0A;"></p>
+<p>&#x4EE3;&#x7801;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x8981;&#x8DD1;&#x5728;linux&#x4E0A;&#xFF0C;&#x8FD8;&#x7F3A;&#x5C11;&#x4E00;&#x4E2A;project.json&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x8F93;&#x5165;linux&#x547D;&#x4EE4;&#xFF1A;vi project.json</p>
+<p>&#x8FDB;&#x5165;vi&#x7F16;&#x8F91;&#x5668;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>{
+  &quot;version&quot;: &quot;1.0.0-*&quot;,
+  &quot;buildOptions&quot;: {
+    &quot;debugType&quot;: &quot;portable&quot;,
+    &quot;emitEntryPoint&quot;: true
+  },
+  &quot;dependencies&quot;: {},
+  &quot;frameworks&quot;: {
+    &quot;netcoreapp1.0&quot;: {
+      &quot;dependencies&quot;: {
+        &quot;Microsoft.NETCore.App&quot;: {
+          &quot;type&quot;: &quot;platform&quot;,
+          &quot;version&quot;: &quot;1.0.1&quot;
+        }
+      },
+      &quot;imports&quot;: &quot;dnxcore50&quot;
+    }
+  }
+}
+</code></pre><p>&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x540E;&#x3002;</p>
+<p>&#x8F93;&#x5165;linux&#x547D;&#x4EE4;&#xFF1A;dotnet restore</p>
+<p><img src="https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155656565-1374370142.png" alt="dotnet restore"></p>
+<p>&#x8F93;&#x5165;linux&#x547D;&#x4EE4;&#xFF1A;dotnet run</p>
+<p><img src="https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155746893-979282090.png" alt="dotnet run">
+&#x5927;&#x529F;&#x544A;&#x6210;&#xFF01;&#xFF01;&#xFF01;.Net&#x7A0B;&#x5E8F;&#x6210;&#x529F;&#x8FD0;&#x884C;&#x5728;Linux&#x4E0A;&#x4E86;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section7.html" class="navigation navigation-prev " aria-label="Previous page: 7、Log4Net详细配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section9.html" class="navigation navigation-next " aria-label="Next page: 9、ASP.Net Core 运行在Linux(Ubuntu)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8、.Net程序跑在Linux上","level":"2.8","depth":1,"next":{"title":"9、ASP.Net Core 运行在Linux(Ubuntu)","level":"2.9","depth":1,"path":"chapter1/section9.md","ref":"./chapter1/section9.md","articles":[]},"previous":{"title":"7、Log4Net详细配置","level":"2.7","depth":1,"path":"chapter1/section7.md","ref":"./chapter1/section7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section8.md","mtime":"2018-03-14T08:02:01.444Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-15T01:41:31.430Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
