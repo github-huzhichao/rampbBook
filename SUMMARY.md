@@ -1,7 +1,5 @@
 # Summary
 
-* [公羊天纵](README.md)
-
 ## .Net
 * [1、浅谈浅拷贝与深拷贝](./chapter1/section1.md)
 * [2、C#索引器](./chapter1/section2.md)

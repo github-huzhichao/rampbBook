@@ -20,13 +20,13 @@ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 
 2、打开VS，新建一个控制台应用程序
 
-![新建一个控制台应用程序](https://images2015.cnblogs.com/blog/446435/201611/446435-20161103154924658-1368385571.png)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fpj8p8f8ujj311q0k3q66.jpg)
 
 3、将代码文件上传到Linux上
 
 这里我使用的是pscp command line工具上传文件到linux
 
-![将代码文件上传到Linux上](https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155152455-258563223.png)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fpj8ps0ghkj30r2071t93.jpg)
 
 代码上传成功之后，我们的程序要跑在linux上，还缺少一个project.json的文件。
 
@@ -60,9 +60,8 @@ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 
 输入linux命令：dotnet restore
 
-![dotnet restore](https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155656565-1374370142.png)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fpj8punn9qj30lv02bq2x.jpg)
 
 输入linux命令：dotnet run
 
-![dotnet run](https://images2015.cnblogs.com/blog/446435/201611/446435-20161103155746893-979282090.png)
-大功告成！！！.Net程序成功运行在Linux上了。
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fpj8tamq6hj30mx0jgjsg.jpg)大功告成！！！.Net程序成功运行在Linux上了。
