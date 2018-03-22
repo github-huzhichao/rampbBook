@@ -6,15 +6,14 @@ Azure WebSite服务默认是不提供黑白名单，也就是说任何Internet�
 
 1、通过VS新建一个ASP.Net MVC项目
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213140431379-1784170652.png)
-
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1fplg87j0z5j311y0k943n.jpg)
 上图我已经打开网站的配置文件（Web.config）
 
 2、给Azure WebSite网站设置白名单
 
 首先百度查看本机的公网IP地址
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213141050785-1906827751.png)
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fplg9qlbxxj30iy05zjro.jpg)
 
 通过Web.config文件中system.webServer节点下来设置访问网站的白名单，将本地公网IP加入白名单。
 
@@ -31,11 +30,11 @@ Azure WebSite服务默认是不提供黑白名单，也就是说任何Internet�
 
 编译之后，部署到Azure WebSite中，本机访问
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213143126269-1312946597.png)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fplgavaflpj311y0jgju1.jpg)
 
 使用一台公网IP为139.219.198.246的机器访问
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213144058472-364763154.png)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fplgbdifj1j311d0ivq8p.jpg)
 
 3、给Azure WebSite网站设置黑名单
 
@@ -56,8 +55,8 @@ Azure WebSite服务默认是不提供黑白名单，也就是说任何Internet�
 
 编译之后，部署到Azure WebSite中，本机访问
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213144933675-452370239.png)
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1fplgbrng1xj30re0jgt9x.jpg)
 
 使用一台公网IP为139.219.198.246的机器访问
 
-![xxx](https://images2015.cnblogs.com/blog/446435/201702/446435-20170213145453754-1010457210.png)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fplgc4raoej311k0ixq8s.jpg)

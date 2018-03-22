@@ -125,4 +125,4 @@ sudo service supervisor start
 
 下图在我部署在linux中的asp.net core网站的访问页面：
 
-![访问页面](https://images2015.cnblogs.com/blog/446435/201612/446435-20161201155556881-798298854.png)
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fplg5w89fqj311w0jaq7d.jpg)
